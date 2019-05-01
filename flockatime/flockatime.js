@@ -20,18 +20,18 @@ var apiKey = '';
 
 function onSave() {
   var saveObj = {
-    timestamp: Date.now()
+    timestamp: firebase.database.ServerValue.TIMESTAMP
   };
 
   if (apiKey !== undefined && apiKey !== null && apiKey !== '' && apiKey !== '\n') {
     console.log('logging to db');
     console.log(apiKey);
-    firebase.database().ref('/codeTime/users/' + apiKey + '/vscode').push(saveObj);
+    firebase.database().ref('/flockalogs/users/' + apiKey).push(saveObj);
     vscode.window.showInformationMessage('Flockalog');
   } else {
     getApiKey().then(key => {
       if (key !== undefined && key !== null && key !== '' && key !== '\n') {
-        firebase.database().ref('/codeTime/users/' + key + '/vscode').push(saveObj);
+        firebase.database().ref('/flockalogs/users/' + key).push(saveObj);
         vscode.window.showInformationMessage('Flockalog');
       } else {
         vscode.window.showErrorMessage('Please enter an API key using the command "Flockatime: API Key');
@@ -44,7 +44,7 @@ function onSave() {
 }
 
 function setApiKey(key) {
-  var home = process.env.HOME;
+  var home = getHomeDir();
   console.log(home);
   fs.writeFile(home + '/.flockatime.cfg', key, function (err) {
     if (err) {
@@ -53,9 +53,13 @@ function setApiKey(key) {
   });
 }
 
+function getHomeDir() {
+  return process.env.HOME || process.env.HOMEPATH || process.env.USERPROFILE;
+}
+
 function getApiKey() {
   return new Promise((resolve, reject) => {
-    var home = process.env.HOME;
+    var home = getHomeDir();
     fs.readFile(home + '/.flockatime.cfg', 'utf-8', (err, key) => {
       if (err) {
         reject(err);

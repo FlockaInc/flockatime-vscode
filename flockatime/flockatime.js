@@ -49,6 +49,8 @@ function setApiKey(key) {
   fs.writeFile(home + '/.flockatime.cfg', key, function (err) {
     if (err) {
       throw err;
+    } else {
+      apiKey = key;
     }
   });
 }

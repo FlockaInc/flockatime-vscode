@@ -6,6 +6,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+v0.1.0
+
+  - when the user enters their api key into vscode, firebase will update the user's profile to indicate it will now gather data from vs code.
+
 v0.0.5
 
   - fixed the bug where entering a new api key required a window reload to take effect.  Window reload no longer required.

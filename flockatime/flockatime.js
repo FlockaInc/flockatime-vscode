@@ -51,6 +51,7 @@ function setApiKey(key) {
       throw err;
     } else {
       apiKey = key;
+      firebase.database().ref('/users/' + key + '/flocka').set(true);
     }
   });
 }

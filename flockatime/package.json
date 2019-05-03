@@ -22,7 +22,7 @@
 			},
 			{
 				"command": "extension.enterApiKey",
-				"title": "Flockatime: API Key" 
+				"title": "Flockatime: API Key"
 			}
 		]
   },

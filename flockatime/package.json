@@ -1,7 +1,7 @@
 {
 	"name": "flockatime",
 	"displayName": "flockatime",
-  "description": "wakatime clone for bootcamp project",
+  "description": "time tracking bootcamp project",
   "publisher": "bootcamp-ballas",
 	"version": "0.1.0",
 	"engines": {

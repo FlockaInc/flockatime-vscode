@@ -1,8 +1,8 @@
 {
 	"name": "flockatime",
 	"displayName": "flockatime",
-	"description": "wakatime clone for bootcamp project",
-	"publisher": "flockainc",
+	"description": "wakatime clone",
+	"publisher": "FlockaInc",
 	"version": "0.2.0",
 	"engines": {
 		"vscode": "^1.33.0"

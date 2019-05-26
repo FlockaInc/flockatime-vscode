@@ -6,6 +6,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+v0.2.0
+
+  - refactored the code to send http requests for flockalogging instead of writing to the database directly.
+
 v0.1.0
 
   - when the user enters their api key into vscode, firebase will update the user's profile to indicate it will now gather data from vs code.

@@ -2,8 +2,8 @@
 	"name": "flockatime",
 	"displayName": "flockatime",
 	"description": "wakatime clone for bootcamp project",
-	"publisher": "bootcamp-ballas",
-	"version": "0.1.0",
+	"publisher": "flockainc",
+	"version": "0.2.0",
 	"engines": {
 		"vscode": "^1.33.0"
 	},
@@ -28,7 +28,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/bootcamp-ballas/flocka-time"
+		"url": "https://github.com/FlockaInc/flockatime-vscode"
 	},
 	"scripts": {
 		"postinstall": "node ./node_modules/vscode/bin/install",

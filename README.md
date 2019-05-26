@@ -1,10 +1,10 @@
 # flockatime README
 
-Author: bootcamp-ballas
+Author: FlockaInc
 
 ## Instructions
 
-1. Sign up for an account at https://flockatime.com
+1. Sign up for an account at https://flockatime.com or the more up to date site at https://react.flockatime.com
 
 2. Go to your account page and copy your API key
 

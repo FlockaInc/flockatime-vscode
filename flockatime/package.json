@@ -1,8 +1,8 @@
 {
 	"name": "flockatime",
 	"displayName": "flockatime",
-  "description": "wakatime clone for bootcamp project",
-  "publisher": "bootcamp-ballas",
+	"description": "wakatime clone for bootcamp project",
+	"publisher": "bootcamp-ballas",
 	"version": "0.1.0",
 	"engines": {
 		"vscode": "^1.33.0"
@@ -25,11 +25,11 @@
 				"title": "Flockatime: API Key"
 			}
 		]
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/bootcamp-ballas/flocka-time"
-  },
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bootcamp-ballas/flocka-time"
+	},
 	"scripts": {
 		"postinstall": "node ./node_modules/vscode/bin/install",
 		"test": "node ./node_modules/vscode/bin/test"

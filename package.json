@@ -1,7 +1,7 @@
 {
 	"name": "flockatime",
 	"displayName": "flockatime",
-	"description": "wakatime clone",
+	"description": "simple programming time productivity app",
 	"publisher": "FlockaInc",
 	"version": "0.2.0",
 	"engines": {
